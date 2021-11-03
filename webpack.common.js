@@ -25,9 +25,6 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      inject: true,
-      hash: true,
-      filename: 'index.[contenthash].html',
       template: './src/template.html'
     })
   ],
