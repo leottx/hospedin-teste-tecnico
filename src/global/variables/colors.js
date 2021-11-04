@@ -12,4 +12,4 @@ const colors = {
   checkMark: '#3BDBC9'
 }
 
-export default colors;
+export {colors};
