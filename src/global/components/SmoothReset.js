@@ -27,6 +27,10 @@ const SmoothReset = createGlobalStyle`
     font-weight: 400;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   ul {
     list-style: none;
   }
@@ -36,6 +40,19 @@ const SmoothReset = createGlobalStyle`
     border: none;
     cursor: pointer;
     font-family: inherit;
+  }
+
+  .leaflet-popup-content-wrapper {
+    border: 1px solid ${({colors: c}) => c.lightText};
+    border-radius: 200px !important;
+    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.2) !important;
+    .leaflet-popup-content {
+      margin: .5rem 1.4rem;
+    }
+  }
+
+  .leaflet-popup-tip {
+    display: none;
   }
 `
 export default SmoothReset;
