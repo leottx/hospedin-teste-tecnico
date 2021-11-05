@@ -15,4 +15,20 @@ module.exports = merge(common, {
     compress: true,
     port: 8080,
   },
+  module: {
+    rules: [
+      { 
+        test: /\.css$/i,
+        use: [ 
+          "style-loader", // 3. Inject styles in the DOM
+          {
+            loader: "css-loader", // 2. Compile css into commonJS
+            options: {
+              modules: false,
+            },
+          },
+        ],
+      },
+    ]
+  }
 });

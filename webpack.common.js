@@ -57,7 +57,6 @@ module.exports = {
               minimizerOptions: {
                 plugins: [
                   ['mozjpeg', { quality: 40 }],
-                  ['pngquant', { quality: [0.4, 0.7]}]
                 ],
               },
             },
