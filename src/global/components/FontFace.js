@@ -4,7 +4,7 @@ import PoppinsBold from '@Fonts/Poppins-Bold.ttf';
 import PoppinsRegular from '@Fonts/Poppins-Regular.ttf';
 import RobotoRegular from '@Fonts/Roboto-Regular.ttf';
 
-const fontFace = createGlobalStyle`
+const FontFace = createGlobalStyle`
   @font-face {
     font-family: 'Poppins';
     src: url(${PoppinsBold}) format('truetype');
@@ -24,3 +24,5 @@ const fontFace = createGlobalStyle`
     font-style: normal;
   };
 `;
+
+export default FontFace;
