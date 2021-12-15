@@ -28,7 +28,7 @@ const HotelLocationStyled = styled.article`
 
 const HotelLocation = ({colors: c, fontSize: fs, data}) => {
   const {checkIn: {start, end}, checkOut} = data[1];
-  console.log(checkOut);
+  
   return (
     <HotelLocationStyled colors={c} fontSize={fs}>
       <HotelMap colors={c} fontSize={fs} data={data[0]}/>

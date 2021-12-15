@@ -7,8 +7,8 @@ import HotelDescription from '@Components/AboutHotel/HotelDescription';
 import HotelLocation from '@Components/AboutHotel/HotelLocation';
 
 const AboutHotelStyled = styled.section`
-  padding: 4.8rem 0 3.2rem;
-  ${({mainGrid}) => mainGrid};
+  padding: 2.4rem 0 0.8rem;
+  ${({mainGrid: mainG}) => mainG};
 `;
 
 // DATA
@@ -16,7 +16,7 @@ import { hotelData } from '@Components/AboutHotel/data.js';
 
 const AboutHotel = ({colors: c, fontSize: fs, mainGrid: mainG}) => {
   return (
-    <GridWrapper color={c}>
+    <GridWrapper bgColor={c.bgPrimary}>
       <AboutHotelStyled mainGrid={mainG}>
         <HotelDescription colors={c} fontSize={fs} data={hotelData.about}/>
         <HotelLocation 

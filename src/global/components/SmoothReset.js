@@ -16,13 +16,14 @@ const SmoothReset = createGlobalStyle`
     padding: 0;
   }
 
-  h1, h2, h3 {
+  h1, h2, h3, h4{
     color: ${({colors: c}) => c.darkText};
     font-family: Poppins;
     font-weight: 700;
   }
 
   body {
+    background: ${({colors: c}) => c.bgSecondary  };
     font-family: 'Roboto';
     font-weight: 400;
   }
@@ -39,6 +40,7 @@ const SmoothReset = createGlobalStyle`
     background: none;
     border: none;
     cursor: pointer;
+    color: inherit;
     font-family: inherit;
   }
 
