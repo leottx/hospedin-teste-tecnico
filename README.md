@@ -1,4 +1,4 @@
-# hospedin-teste-tecnico
+# Hospedin Teste Técnico
 
 ![badge in progress](https://img.shields.io/badge/status-in%20progress-yellow)
 
