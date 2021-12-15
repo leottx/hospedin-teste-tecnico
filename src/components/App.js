@@ -2,9 +2,10 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 // COMPONENTS
-import AboutHotel from '@Components/AboutHotel/AboutHotel';
 import SmoothReset from '@Global/components/SmoothReset';
 import FontFace from '@Global/components/FontFace';
+import AboutHotel from '@Components/AboutHotel/AboutHotel';
+import BookRoom from '@Components/BookRoom/BookRoom';
 
 // VARIABLES
 import { colors as c } from '@Global/variables/colors.js';
@@ -24,6 +25,11 @@ const App = () => {
       <SmoothReset colors={c} fontSize={fs}/>
       <FontFace/>
       <AboutHotel 
+        colors={c} 
+        fontSize={fs}
+        mainGrid={mainG}
+      />
+      <BookRoom
         colors={c} 
         fontSize={fs}
         mainGrid={mainG}
